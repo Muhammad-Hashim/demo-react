@@ -6,8 +6,13 @@ function App() {
   return (
     <div >
       <div style={{ display: "flex", flexDirection: "row", gap: "10px", justifyContent: "center" }}>
-        <SldpPlayer />
+        <div>
+          SldpPlayer with wss://5ostudioslive.cachefly.net
+          <SldpPlayer />
+        </div>
+
         <ExternalWebsite />
+
       </div>
       <FourButtonControl />
     </div>
@@ -18,6 +23,7 @@ export default App;
 const ExternalWebsite = () => {
   return (
     <div style={{ width: "50%", height: "70vh", border: "none" }}>
+      https://cam.mshemali.dev/"
       <iframe
         src="https://cam.mshemali.dev/"
         style={{ width: "100%", height: "100%", border: "none" }}
